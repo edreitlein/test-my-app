@@ -5,6 +5,11 @@ import TextWithInput from './components/TextWInput';
 import './App.css';
 import 'fontsource-roboto';
 import RadioButtonsGroup from './components/radioButton';
+import GoogleLogin from 'react-google-login';
+import GoogleBtn from './components/GoogleBtn';
+
+
+
 
 
 
@@ -12,25 +17,39 @@ var name = 'Firstname Lastname';
 
 
 
+
+
 function App() {
+
+  
+    
+  
+
+//attempt to show that login was successful -  with either button change or text update on page?
+
+  var buttonText = 'Login';
   return (
+
     <div className="App">
-      <h1>Volunteer Submission Form</h1>
-      <h3>Student View</h3>
-      <h2>testfromGit</h2>
       
-      <RadioButtonsGroup></RadioButtonsGroup>
+      <GoogleBtn></GoogleBtn>
 
-      <TextWithInput></TextWithInput>
-      <div>
-      <button onClick = {() => {alert('')}}>Grab</button>
-      </div>
 
-      
-      
+          
     </div>
     
   );
 }
 
 export default App;
+
+/*
+OTHER FIELDS
+<RadioButtonsGroup></RadioButtonsGroup>
+
+      <TextWithInput></TextWithInput>
+      <div>
+      <button onClick = {() => {alert('')}}>Grab</button>
+      </div>
+
+*/
